@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    padding: 100px 3px;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, rgb(33, 33, 82), rgb(28, 74, 126));
+}
+
+#page-loader {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: white url(./images/loader.gif) no-repeat center center;
+    background-size: 400px;
+}
+
+.container {
+    width: 500px;
+    height: fit-content;
+    box-shadow: 0 0 30px #000;
+    border-radius: 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 20px 50px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    margin-bottom: 5px;
+}
+h1 img {
+    width: 25px;
+}
+
+.input-form {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d3d3d351;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 18px 25px;
+    border-radius: inherit;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.input-btn {
+    padding: 4px 8px;
+    border-radius: inherit;
+    padding: 10px 15px;
+    width: 80px;
+    border: none;
+    background-color: rgb(255, 128, 0);
+    font-weight: bold;
+    cursor: pointer;
+    width: 40%;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.input-btn:hover {
+    background-color: rgb(224, 112, 0);
+}
+
+.list-container {
+    width: 100%;
+}
+
+.list-container div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.list-container div p {
+    width: 100%;
+    overflow: auto;
+}
+
+.list-container div img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+button {
+    /* user-select: none; */
+}
+
+.list-container div button {
+    margin-left: auto;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+}
+.list-container div button:hover {
+    background-color: #3c38380e;
+}
+
+.list-container div p.checked {
+    color: #c0b5b5;
+    text-decoration: line-through;
+}
+
